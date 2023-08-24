@@ -20,9 +20,9 @@ app.use('/api/auth', authRoutes);
 app.use('/api/blogs', authMiddleware, blogRoutes);
 
 
-app.get('/', (req, res) => {
-    res.send('Homepage');
-})
+// app.get('/', (req, res) => {
+//     res.send('Homepage');
+// })
 
 const PORT = process.env.PORT || 8080;
 
